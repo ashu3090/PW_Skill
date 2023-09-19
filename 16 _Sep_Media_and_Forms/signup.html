@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div style="max-width: 360px ; height: 150px;margin: 15px; padding: 5px">
+    <form action="" method="post">
+    <fieldset>
+        <legend >Sing-Up</legend>
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" id="fname" required minlength="3" >
+        <br>
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" id="lname" required minlength="3">
+        <br>
+
+        <label for="email">Email Id:</label>
+        <input type="email" name="email" id="email" required min="3">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required minlength="3">
+        <br>
+        <label for="cpassword">Confirm Password:</label>
+        <input type="password" name="cpassword" id="cpassword" required>
+        <br>
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" required min="1" max="150">
+        <br>
+        <label for="gender">Gender:</label>
+        <input type="text" name="gender" id="gender" required min="3">
+        <br>
+        <label for="terms">Agree to terms and conditions</label>
+        <input type="checkbox" name="terms" id="terms"><br>
+        <input type="submit" value="Login">
+    </fieldset>
+    </form>
+  </div>  
+</body>
+</html>

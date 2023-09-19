@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.gallery
+{
+    margin:5px;
+    border: 2px solid black;
+    float: left;
+    max-width: 250px;
+    transition: transform .2s;;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+
+.gallery:hover {
+    transform: scale(1.1);
+}
+.media{
+    
+    max-width: 700px;
+    border: 2px solid beige;
+    
+    
+}
+h1,h2{
+    margin: 10px;
+}
+input{
+    margin:10px;
+    padding-bottom: 5px;
+}
+label{
+    margin-left: 10px;
+}
