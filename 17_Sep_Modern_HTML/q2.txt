@@ -1,0 +1,9 @@
+HTML Entities:
+An HTML entity is a piece of text ("string") that begins with an ampersand (&) and ends with a semicolon (;). Entities are frequently used to display reserved 
+characters and invisible characters.
+Commnanly used Entities are:
+    1. &amt;
+    2. &lt;
+    3. &gt;
+    4. &nbsp;
+    5. &pound;

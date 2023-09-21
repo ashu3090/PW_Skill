@@ -1,0 +1,9 @@
+Accessibility is the practice of making your website as usable by many users as possible.
+ It helps people with disability and those who use mobile or slow internet connections.
+ Web content can be made accessible just by making sure the correct HTML elements are 
+ used for the correct purpose. Some major ways to make HTML accessible are as follows:
+
+1.Semantic HTML
+2.Good Alternative texts
+3.Proper use of Headings
+4.HTML lang attribute

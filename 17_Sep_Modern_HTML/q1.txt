@@ -1,0 +1,9 @@
+Features of HTML5:
+1. Intro of audio and video:  Audio and Video tags are the two major addition to HTML5. 
+It allows developers to embed a video or audio on their website.
+2. Header and Footer:
+    With these new tags, there is no longer a need to identify the two elements with a 
+    <div> tag. Footer is placed at the end of the web page while Header is placed at the start of the web page.
+3.Nav tag:
+     The <nav> tag defines a set of navigation links. It is used for the part of an internet site that links to 
+     different pages at the website.
