@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .parent{
+            background-color: aquamarine;
+            position: relative;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+        }
+        .box1{
+            background-color: chocolate;
+            position:absolute;
+            z-index: 3;
+            left: 200px;
+        }
+        .box2{
+            background-color: chartreuse;
+            position:absolute;
+            z-index: 2;
+            left:100px;
+        }
+        .box3{
+            background-color:crimson;
+            position:absolute;
+            z-index: 1;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <h1>Z-Index Property</h1>
+        <p>The z-index property specifies the stack order of an element.
+
+            An element with greater stack order is always in front of an element with a lower stack order.
+            
+            z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items.</p>
+        <div class="box box1"> Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+    </div>
+</body>
+</html>
