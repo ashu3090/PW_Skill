@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: aqua;
+        }
+        .nav{
+            width: 70%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:5px;
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+            background-color: rgb(157, 255, 0);
+            border: 1px solid black;
+        }
+        .left{
+            background-color: red;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .left-part1{
+            
+            width: 100%;
+            height: 40%;
+            background-color: beige;
+        }
+        .left-part2{
+            
+            width: 100%;
+            height: 60%;
+            background-color: rgb(219, 219, 27);
+        }
+
+        .right{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="left">
+            <div class="left-part1">
+                <img src="" alt="">
+            </div>
+            <div class="left-part2"></div>
+        </div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>
