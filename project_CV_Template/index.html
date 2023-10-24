@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6a17c407d2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+            font-family: 'Poppins', sans-serif;
+        }
+        .nav{
+            width: 60%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:5px;
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+            
+            /* border: 1px solid rgb(92, 65, 65); */
+            box-shadow: 10px 10px 30px grey;
+        }
+        .left{
+            /* background-color: red; */
+            display: flex;
+            flex-direction: column;
+           
+        }
+
+        .left-part1{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 30%;
+            background-color: rgb(120, 55, 241);
+            color: white;
+            /* justify-content: center;
+            align-items: center; */
+        }
+        .left-part1-content{
+            width: 100%;
+            text-align: center;
+            height: 80%;
+        }
+        .left-part1-content h4,h3{
+            margin: 0px;
+            padding: 0px;
+            color: white        ;
+        }
+        .left-part2{
+            
+            width: 100%;
+            height: 100%;
+            background-color: rgb(56, 56, 53);
+            color: white;
+        }
+
+        .right{
+         
+            display: flex;
+            flex-direction: column;
+            margin-right: 3px;
+        }
+
+        .contact ol{
+            
+           list-style-type: none;
+            margin-left: 20px;
+            font-weight: 300;
+        }
+
+        .contact h4{
+            font-weight: 600;
+            margin-top: 15px;
+            margin-left: 10px;
+            border-bottom: 1px solid white;
+           
+        }
+        .certificate li{
+            
+            list-style-type: none;
+             margin-left: 20px;
+             margin-top: 20px;
+             font-weight: 300;
+         }
+ 
+         .certificate h4{
+             font-weight: 600;
+             margin-top: 15px;
+             margin-left: 10px;
+             border-bottom: 1px solid white;
+            
+         }
+
+        .skills h4{
+            font-weight: 600;
+            margin-top: 20px;
+            margin-left: 10px;
+            border-bottom: 1px solid white;
+           
+        }
+        .skills label,progress{
+            margin-left: 20px;
+
+        }
+        .contact li{
+            margin-top: 15px;
+            margin-left: 10px;
+            font-size: 14px;
+            list-style-type: none;
+
+        }
+        img{
+            width: 60%;
+            height: 70%;
+            border-radius: 50%;
+            border: 2px solid palegreen;
+            
+        }
+
+        .objective h3{
+            font-weight: 600;
+             margin-top: 15px;
+             margin-left: 10px;
+             border-bottom: 3px solid rgba(128, 128, 128);
+             color: rgb(0, 217, 255);
+        }
+        .objective p{
+           
+             margin-top: 3px;
+             margin-left: 15px;
+             color: rgb(91, 96, 97);
+             font-size: 13px;
+             text-align: justify;
+             
+        }
+
+        .work h3{
+            font-weight: 600;
+             margin-top: 15px;
+             margin-left: 10px;
+             border-bottom: 3px solid rgba(128, 128, 128);
+             color: rgb(0, 217, 255);
+           
+        }
+        .work li,b {
+            margin-top: 15px;
+            margin-left: 10px;
+            list-style-type: none;
+        }
+        .work p{
+           
+             margin-top: 3px;
+             margin-left: 10px;
+             color: rgb(91, 96, 97);
+             font-size: 13px;
+             text-align: justify;
+             
+        }
+
+        .projects h3{
+            font-weight: 600;
+             margin-top: 15px;
+             margin-left: 10px;
+             border-bottom: 3px solid rgba(128, 128, 128);
+             color: rgb(0, 217, 255);
+           
+        }
+        .projects li,b {
+            margin-top: 15px;
+            margin-left: 10px;
+            list-style-type: none;
+        }
+        .projects p{
+           
+             margin-top: 3px;
+             margin-left: 10px;
+             color: rgb(91, 96, 97);
+             font-size: 13px;
+             text-align: justify;
+             
+        }
+
+        .education h3{
+            font-weight: 600;
+             margin-top: 15px;
+             margin-left: 10px;
+             border-bottom: 3px solid rgba(128, 128, 128);
+             color: rgb(0, 217, 255);
+           
+        }
+        .education li,b {
+            margin-top: 15px;
+            margin-left: 10px;
+            list-style-type: none;
+        }
+        .education p{
+           
+             margin-top: 3px;
+             margin-left: 10px;
+             color: rgb(91, 96, 97);
+             font-size: 13px;
+             text-align: justify;
+             
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="left">
+            <div class="left-part1">
+                <div class="left-part1-content"><img src="./images/1.png" alt="">
+                <h3>Your Name</h3>
+                <h4>Title</h4>
+                </div>
+                <div style="display: flex; align-items: center; justify-content: space-around;"><i class="fa-brands fa-github"></i><p>gidhubid</p> 
+                    <i class="fa-brands fa-linkedin"></i><p>linkedinid</p></div>
+            </div>
+            <div class="left-part2">
+            <div class="contact">
+              <h4>Contact </h4>
+              <ol>                
+                <li>Phone</li>
+                <li>XXXXXXXX</li>
+                <li>Email</li>
+                <li>youremail@yahoo.com</li>
+               </ol>
+            </div>
+            <div class="skills"><h4>Skills </h4>
+                <label for="skill1">Skill 1</label>
+                <br>
+                <progress id="skill1" max="100" value="40">70%</progress>
+                <br>
+                <label for="skill2">Skill 2</label><br>
+                <progress id="skill2" max="100" value="60">70%</progress><br>
+                <label for="skill3">Skill 3</label><br>
+                <progress id="skill3" max="100" value="55">70%</progress><br>
+                <label for="skill4">Skill 4</label><br>
+                <progress id="skill4" max="100" value="65">70%</progress><br>
+                <label for="skill5">Skill 5</label><br>
+                <progress id="skill5" max="100" value="75">70%</progress><br>
+                <label for="skill6">Skill 6</label><br>
+                <progress id="skill6" max="100" value="87">70%</progress><br>
+                <label for="skill7">Skill 7</label><br>
+                <progress id="skill7" max="100" value="67">70%</progress><br>
+                <label for="skill8">Skill 8</label><br>
+                <progress id="skill8" max="100" value="76">70%</progress><br>
+                <label for="skill8">Skill 9</label><br>
+                <progress id="skill9" max="100" value="56">70%</progress><br>
+                <label for="skill10">Skill 10</label><br>
+                <progress id="skill10" max="100" value="98">70%</progress><br>
+            </div>
+            <div class="certificate">
+                <h4>Certificate </h4>
+                <ol>                
+                  <li>Certificate Name 1</li>
+                  <li>Certificate Name 2</li>
+                  <li>Certificate Name 3</li>
+                  
+                 </ol>
+              </div>
+        </div>
+        </div>
+     <div class="right">
+        <div class="objective">
+            <h3>OBJECTIVE</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore explicabo quas deserunt aliquam, harum eaque illum! Labore quam non cumque nostrum quis enim obcaecati, in provident. Ullam fuga adipisci sit.</p>
+         </div>
+
+         <div class="work">
+            <h3>WORK EXPERIENCE </h3>
+            <ol>
+                <li> <i class="fa-solid fa-arrow-right"></i><b>Role Name 1 </b> <b> <span style="float: right;">FROM - TO</span></b></li> 
+                <b>Company Name 1</b>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore explicabo quas deserunt aliquam, harum eaque illum! Labore quam non cumque nostrum quis enim obcaecati, in provident. Ullam fuga adipisci sit.</p>
+            </ol>
+
+            <ol>
+                <li> <i class="fa-solid fa-arrow-right"></i><b>Role Name 2 </b> <b> <span style="float: right;">FROM - TO</span></b></li> 
+                <b>Company Name 2</b>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore explicabo quas deserunt aliquam, harum eaque illum! Labore quam non cumque nostrum quis enim obcaecati, in provident. Ullam fuga adipisci sit.</p>
+            </ol>
+            <ol>
+                <li> <i class="fa-solid fa-arrow-right"></i><b>Role Name 3 </b> <b> <span style="float: right;">FROM - TO</span></b></li> 
+                <b>Company Name 3</b>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore explicabo quas deserunt aliquam, harum eaque illum! Labore quam non cumque nostrum quis enim obcaecati, in provident. Ullam fuga adipisci sit.</p>
+            </ol>
+            
+         </div>
+
+         <div class="projects">
+            <h3>PROJECTS</h3>
+            <ol>
+                <li> <i class="fa-solid fa-arrow-right"></i><b>Project Name 1 </b></li> 
+                <b>Tech Stack</b>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore explicabo quas deserunt aliquam, harum eaque illum! Labore quam non cumque nostrum quis enim obcaecati, in provident. Ullam fuga adipisci sit.</p>
+
+                <li> <i class="fa-solid fa-arrow-right"></i><b>Project Name 2 </b></li> 
+                <b>Tech Stack</b>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore explicabo quas deserunt aliquam, harum eaque illum! Labore quam non cumque nostrum quis enim obcaecati, in provident. Ullam fuga adipisci sit.</p>
+            </ol>
+         </div>
+
+         <div class="education">
+            <h3>EDUCATION</h3>
+            <ol>
+                <li> <i class="fa-solid fa-arrow-right"></i><b>Project Name 1 </b></li> 
+                <b>Tech Stack</b>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore explicabo quas deserunt aliquam, harum eaque illum! Labore quam non cumque nostrum quis enim obcaecati, in provident. Ullam fuga adipisci sit.</p>
+
+                <li> <i class="fa-solid fa-arrow-right"></i><b>Project Name 2 </b></li> 
+                <b>Tech Stack</b>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore explicabo quas deserunt aliquam, harum eaque illum! Labore quam non cumque nostrum quis enim obcaecati, in provident. Ullam fuga adipisci sit.</p>
+            </ol>
+         </div>
+    </div>
+
+        
+    </div>
+</body>
+</html>
