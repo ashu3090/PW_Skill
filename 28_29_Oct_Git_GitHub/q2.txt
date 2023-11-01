@@ -1,0 +1,25 @@
+Git WorkFlows:
+    1.Centralized Workflow:
+    The centralized workflow is a simple and straightforward approach to using Git. In this model, there is a single central repository with a "master" branch where all developers push their changes
+
+    2:Feature Branch Workflow
+    The feature branch workflow is a popular approach that isolates the development of individual features in separate branches. Doing so helps maintain a clean and stable master branch while allowing developers to experiment and iterate on their features.
+
+    3:Gitflow Workflow
+    The Gitflow workflow is an advanced branching model designed to support complex projects with multiple release cycles. It involves several branches, including "master," "develop," "feature," "release," and "hotfix" branches.
+
+    4: Forking workflow:
+    The forking workflow is commonly used in open-source projects and encourages collaboration by allowing contributors to work independently. In this model, each developer forks the main repository, creating their own copy. They make changes in their fork and submit pull requests to the original repository when their work is complete.
+
+    5:Pull Request Workflow
+    The pull request workflow is centered around the concept of code reviews and collaboration. In this model, developers create branches for their work and submit pull requests when their changes are ready for review. Team members review the changes, provide feedback, and approve or request modifications before the changes are merged into the main branch.
+
+    Staging: 
+    Staging is the process of organizing and preparing our project files for a commit. It is the intermediate step between modifying our files and storing them permanently in the repository.
+
+    Working Directory:
+    The “Working directory”, also known as the “workspace”, is a folder that users create to store their project files. It is utilized to store or keep any file. It is essentially the user’s project folder.
+
+
+    Repositories:
+    A repository is the most basic element of GitHub. It's a place where you can store your code, your files, and each file's revision history. Repositories can have multiple collaborators and can be either public or private.

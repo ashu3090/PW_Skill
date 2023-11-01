@@ -1,0 +1,13 @@
+Steps to contribute Open Source Project on GitHub:
+
+Step 1: Fork the desired project
+
+Step 2 - Clone the Project
+
+Step 3 - Create A New Branch
+
+Step 4 - Develop, Stage, and Commit
+
+Step 5 - Push the Changes
+
+Step 6 - Create a Pull Request

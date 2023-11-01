@@ -1,0 +1,14 @@
+.gitignore file:
+    The .gitignore is a text file where each line contains a pattern for files or directories to ignore. It is usually placed at the root of the project folder.
+
+Use of .gitignore:
+    When sharing your code with others, there are often files or parts of your project, you do not want to share.
+
+    Examples
+
+     files
+    temporary files
+    hidden files
+    personal files
+    etc.
+    Git can specify which files or parts of your project should be ignored by Git using a .gitignore file.

@@ -1,0 +1,10 @@
+GitHub:
+    GitHub facilitates collaboration among developers. It also provides distributed version control. Teams of developers can work together in a centralized Git repository and track changes as they go to stay organized.
+working Of Git:
+    The Git version control system, as the name suggests, is a system that records all the modifications made to a file or set of data so that a specific version may be called up later if needed. The system makes sure that all the team members are working on the file’s latest version, and everyone can work simultaneously on the same project.
+
+ Other Version Control Examples:
+    BitBucket
+    Phabricator
+    GitLab
+    Gogs
