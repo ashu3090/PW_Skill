@@ -1,0 +1,98 @@
+#btnsearch{
+    background-color: rgb(236, 64, 99);
+    border: 0;
+    font-weight: 500;
+}
+#button1{
+    background-color: rgb(236, 64, 99);
+    border: 0;
+   
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#button2{
+   
+    color:rgb(236, 64, 99);
+    border: 1px solid rgb(236, 64, 99);
+    font-size: 18px;
+    font-weight: 500;
+}
+body {
+    background: url('/Project_Website_clone/images/background-image.png') no-repeat center center fixed;
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; */
+    width: 100%;
+    
+  }
+
+  
+  .navbar-nav{
+    font-weight: 600;
+  }
+
+  h1{
+    font-size: 55px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif
+    ;
+  }
+
+  p{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0px;
+    margin: 0px;
+    color: grey;
+  }
+
+  p + button{
+    background-color: aquamarine;
+  }
+  #car_loan{
+    position: absolute;
+    left:50%
+  }
+
+  #home_loan{
+    position:absolute; right:7%;top:30%
+  }
+
+  /* @media only screen and (min-width: 765px) and (max-width:992px){
+    #car_loan{
+      position: absolute;
+      top:11%;
+      left:58%
+    }
+  } */
+  @media only screen and (min-width: 578px) and (max-width:991px){
+   
+    #car_loan{
+      position: fixed;
+      top:15%;
+      left:58%
+    }
+    #home_loan{
+      position: fixed;
+      top:21%;
+      right:24%
+    }
+  }
+
+   @media only screen and (max-width: 575px)
+{
+  #car_loan{
+    position: fixed;
+    top:45%;
+    left:2%
+  }
+  #home_loan{
+    position: fixed;
+    top:45%;
+    right:39%
+  }
+}
+   
