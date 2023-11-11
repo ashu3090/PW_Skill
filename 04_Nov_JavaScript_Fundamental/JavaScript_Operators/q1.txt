@@ -1,0 +1,1 @@
+Operators are used to perform operation on data. Operators are used to assign values, compare values, perform arithmetic operations, and more.

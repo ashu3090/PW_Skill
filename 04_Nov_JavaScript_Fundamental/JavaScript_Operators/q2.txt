@@ -1,0 +1,31 @@
+In JavaScript, we have various types of operators. 
+1.Arithmetic Operators
+2.Assignment Operators
+3.Comparison (Relational) Operators
+4.Logical Operators
+5.Bitwise Operators
+
+Arithmetic Operators:
+Arithmetic operators perform basic arithmetic operations on the operands. 
+example: let a =10,b=4
+         let c = a**4
+         console.log(c)
+
+Assignment operators:
+Assignment operators are used to assign values to JavaScript variables.
+example let a =34434
+
+Comparison operators:
+Comparison operators are used in logical statements to determine equality or difference between variables or values.
+
+example:
+let a = 344, b =233
+console.log(a==b)
+console.log(a===b)
+console.log(a>=b)
+console.log(a<=b)
+
+Logical operators:
+Logical operators are used to determine the logic between variables or values.
+
+

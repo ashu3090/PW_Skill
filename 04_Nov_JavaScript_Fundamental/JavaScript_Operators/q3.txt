@@ -1,0 +1,14 @@
+unary operator:
+Unary operator works on single operand.
+example let a= 10
+        console.log(++a)
+
+Binary Operator:
+Binary operator works on three operands.
+example: let a =223, b=33
+         let c = a+b
+
+Ternary operator: 
+Ternary operator works on three operands.
+example:
+let result = (10 > 0) ? true : false;

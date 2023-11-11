@@ -1,0 +1,11 @@
+Operator precedence in JavaScript determines the priority of operators in an operation. It determines which operators have higher precedence than others, and thus tells us the order to perform a given mathematical expression.
+
+Operators with higher precedence will become the operands of operators with lower precedence. This means that the operator with higher precedence goes first in an operation.
+Example:
+console.log(1 + 2 * 3);
+The multiplication is done first, the expression turns into
+console.log(1 + 6)
+The addition is then evaluated, the result is 7
+
+Associativity is the direction in which the expression is evaluated: right to left or left to right.
+
