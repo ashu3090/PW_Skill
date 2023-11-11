@@ -1,0 +1,5 @@
+variable are used to hold some values in program. We need a variable to store some data.
+creating a variable:
+let a = 2333
+let b = "Abc"
+let c = 344.33

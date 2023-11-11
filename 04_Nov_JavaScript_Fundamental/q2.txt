@@ -1,0 +1,5 @@
+The use of JavaScript can be both on the client-side and server-side. While HTML and CSS languages are used to give structure and style to web pages, JavaScript is used to add interactive elements that engage users.
+For Example
+We want to create login feature in website, when we click on login link , a login page will appear.
+First we have to use html and Css or Css framework to design a login page, and if we want by clicking op login button a login page will appears, this can be done with JavaScripts
+

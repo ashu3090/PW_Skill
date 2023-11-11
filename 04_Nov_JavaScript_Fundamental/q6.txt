@@ -1,0 +1,8 @@
+variable proper naming is important while making a programs. Proper naming convension should be followed while givigng 
+the names to variable , it  makes eaiser to identify them.
+
+example
+
+let amount =10100,rate = 12, time = 2
+let interest = (amount * rate * time)/100
+console.log(`Interest amount is ${interest}`)

@@ -1,0 +1,8 @@
+Primitive data types in JavaScript:
+1: string - are used to store alphanumerical values in single or double quotes. example let a = "abc"
+2: number - hold numeric values. example let a =2022002
+3: boolean - hold true or false. example let b =false
+4: bigint - hold long range of numeric values.
+5: undefine -  example let a = undefine
+6: null - sometime if we want to hold no values in variable , we can store null in that. example let a = null
+7: symbol - example let a = new Symbol("keys)

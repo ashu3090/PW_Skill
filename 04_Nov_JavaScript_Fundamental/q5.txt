@@ -1,0 +1,10 @@
+Comments are use to improve the readabilty of program. Comments are used to make a documentatio of program, so that other can easily get to know how the logic is going , we functions have which task, and what are the use of different variable.
+Comments are two type in JavaScript
+single line (//)
+multiline (/*  */)
+
+example:
+
+let a =110 //variable a is use to hold value
+let b = 343
+let c = "adfd"
