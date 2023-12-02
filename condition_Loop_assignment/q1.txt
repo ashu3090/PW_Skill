@@ -1,0 +1,90 @@
+Ans:Conditional statements are used to perform different actions based on different conditions.
+Different conditional statement available in javascript are:
+    1. simple if
+    2. if else
+    3. if - else if
+    4 switch
+
+    simple if:
+    Use the if statement to specify a block of JavaScript code to be executed if a condition is true.
+    Syntax:
+        if (condition) {
+        //  block of code to be executed if the condition is true
+        }
+
+    Example:
+        if (hour < 18) 
+        {
+        greeting = "Good day";
+        }
+
+    if else statement:
+
+    Syntax:
+        if (condition) {
+        //  block of code to be executed if the condition is true
+        } else {
+        //  block of code to be executed if the condition is false
+        }
+
+    Example:
+        if (hour < 18) {
+        greeting = "Good day";
+        } else {
+        greeting = "Good evening";
+        }
+
+    if elseif:
+    Syntax:
+        if (condition1) {
+        //  block of code to be executed if condition1 is true
+        } else if (condition2) {
+        //  block of code to be executed if the condition1 is false and condition2 is true
+        } else {
+        //  block of code to be executed if the condition1 is false and condition2 is false
+        }
+
+    Example:
+        if (time < 10) {
+        greeting = "Good morning";
+        } else if (time < 20) {
+        greeting = "Good day";
+        } else {
+        greeting = "Good evening";
+        }
+
+        Switch:
+
+        switch(expression) {
+        case x:
+            // code block
+            break;
+        case y:
+            // code block
+            break;
+        default:
+            // code block
+        }
+
+        switch (new Date().getDay()) {
+        case 0:
+            day = "Sunday";
+            break;
+        case 1:
+            day = "Monday";
+            break;
+        case 2:
+            day = "Tuesday";
+            break;
+        case 3:
+            day = "Wednesday";
+            break;
+        case 4:
+            day = "Thursday";
+            break;
+        case 5:
+            day = "Friday";
+            break;
+        case 6:
+            day = "Saturday";
+        }

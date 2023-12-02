@@ -1,0 +1,59 @@
+Loop:
+Loops can execute a block of code a number of times. Types of loop available in javascript are:
+    1. for
+    2. while
+    3. for in
+    4. for of
+    5. while
+
+for:
+Syntax:
+        for (expression 1; expression 2; expression 3) {
+    // code block to be executed
+    }
+
+for (let i = 0; i < 5; i++) {
+  text += "The number is " + i + "<br>";
+}
+
+for in:
+
+Syntax:
+    for (key in object) {
+    // code block to be executed
+    }
+
+Example:
+const person = {fname:"John", lname:"Doe", age:25};
+
+    let text = "";
+    for (let x in person) {
+    text += person[x];
+    }
+
+for of:
+
+Syntax:
+    for (variable of iterable) {
+    // code block to be executed
+    }
+Example:
+
+const cars = ["BMW", "Volvo", "Mini"];
+
+let text = "";
+for (let x of cars) {
+  text += x;
+}
+
+While:
+while (condition) {
+  // code block to be executed
+}
+
+
+Example:
+while (i < 10) {
+  text += "The number is " + i;
+  i++;
+}
