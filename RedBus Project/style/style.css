@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.btn-outline-secondary:hover
+{
+ background-color: rgb(245, 243, 243);
+ color: black;
+ 
+}
+.btn-outline-secondary
+{
+ border: 0px;
+ color: rgb(39, 38, 38);
+}
+#search_form{
+   
+    background-color: azure;
+    border-radius: 50px;
+    
+   
+}
+li{
+    display: inline;
+    text-decoration: none;
+    padding-left: 10px;
+  }
+  #quick_access{
+    border-radius: 40px;
+    background-color: rgb(194, 67, 67);
+    background-image: url(../images/red-suitcase-with-lid-hat-it_786255-134.avif);
+    background-size: 600px;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    
+  }
+
+  #quick_access  p{
+    font-size: 43px;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+    color: rgba(255, 255, 255, 0.863);
+   
+    
+  }
+  .enjoy{
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 2.20em;
+    margin-bottom: 2.25em;
+    
+  }
+  .enjoy p{
+    font-size: 10px;
+    
+  }
+  .vertical-line { 
+width: 1px; 
+background-color: rgb(204, 201, 201); 
+} 
+
+#primo{
+  background-image: linear-gradient(to right, rgb(41, 25, 100) , rgb(238, 154, 220)); border-radius:14px;
+  color:rgba(255, 255, 255, 0.938);
+}
+.parent{
+  display: flex;
+  border:1ps solid black;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.child{
+  width: 150px;
+  height: 150px;
+ 
+  text-align: center;
+  
+}
+.child_img{
+  
+  width: 120px;
+  height: 120px ;
+  margin: .4rem .5rem;
+
+}
+.child_p{
+  text-align: center;
+  text-decoration: none;
+}
+
+.child a{
+  text-decoration: none;
+  color: rgb(49, 46, 46);
+}
+.child_img img{
+ 
+  width: 100%;
+  height: 100% ;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 0px #aaa;
+
+}
+
+.parentglobal{
+  display: flex;
+  border:1ps solid black;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.childglobal{
+  width: 150px;
+  height: 170px;
+ 
+  text-align: center;
+  
+}
+.childglobal a{
+  text-decoration: none;
+  color: rgb(49, 46, 46);
+}
+.private_bus  ul{
+  padding: 1px;
+  
+}
+.private_bus  li{
+  list-style-type: none;
+  color: rgb(78, 75, 75);
+  font-size: 18px;
+  padding: 1.2rem 0;
+  border-radius: 30px;
+  display: inline-block;
+  
+
+}
+.private_bus  li:hover{
+  background-color: rgb(240, 243, 241);
+}
+
+.private_bus  a{
+  text-decoration: none;
+  color: rgb(78, 75, 75);
+  
+  
+
+}
+
+.country{
+  font-size: 22px;
+  color: black;
+  font-weight: 700;
+}

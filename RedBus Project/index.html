@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="./style/style.css">
+    
+    <script src="https://kit.fontawesome.com/6a17c407d2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigatoin Menu -->
+    <header >
+        <nav class="navbar navbar-expand-sm navbar-light bg-white  justify-items-center">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="./images/redbus-logo.png" style="width:100px; height: 60px;"></img></a>
+            
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+                
+              </button>
+              
+              <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><button type="button" class="btn btn-outline-secondary   border-0 ">
+                    
+                      <img src="./images/icons8-bus-64.png" width="45" class=""/>
+                    <span class="vr" >Bus Tickets</span>
+                    </button></a>
+                  </li>
+                  <li class="nav-item">
+                   <a class="nav-link" href="javascript:void(0)"><button type="button" class="btn btn-outline-secondary border-0 ">
+                    <img src="./images/steering-wheel.png" width="35" />
+                    <span class="vr" >Cab Rental</span>
+                    </button></a>
+                  </li>
+                  <li class="nav-item">
+                   <a class="nav-link" href="javascript:void(0)"><button type="button" class="btn btn-outline-secondary border-0 ">
+                    <img src="./images/icons8-train-50.png" width="45" />
+                    <span class="vr" >Bus Ticket</span>
+                    </button></a>
+                  </li>
+                </ul>
+                <div class="d-flex">
+                  <a class="nav-link" href="#"><button type="button" class="btn btn-outline-secondary   border-0 ">
+                    <img src="./images/icons8-headset-50.png" width="29" class=""/>
+                    <span class="vr">Help</span>
+                    </button></a>
+                    <div class="dropdown mt-2 ">
+                      <button class="btn btn-outline-secondary  dropdown-toggle border-0 " type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="./images/icons8-user-64.png" width="29" />
+                        Accounts
+                      </button>
+                      <div class="dropdown-menu  " aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Cancel Ticket</a>
+                        <a class="dropdown-item" href="#">Change Travel Date</a>
+                        <a class="dropdown-item" href="#">Show My Ticket</a>
+                        <a class="dropdown-item" href="#">Email/SMS</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Login</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </nav>
+          
+         
+    </header>
+    <!-- Red Banner -->
+    <section >
+      <div class="container-fluid  ">
+        <div class="row">
+          <div  id="top_banner" style="
+          background-image: url('./images/redbackgr1.jpg'); width: 100%; height: 50vh;">
+           <div class="col">
+            <p class="display-6 text-center text-white   fw-bolder pt-4 ">India's No. 1 Online Bus Ticket Booking Site</p>
+           </div>
+           
+            <!-- Search Facility -->
+            <div class="d-flex justify-content-center align-items-center">
+            <div class="col-10 p-4" id="search_form">
+              
+              <form class="row justify-content-center   align-items-center flex-wrap  ">
+                <div class="col-3">
+                  <label class="visually-hidden" for="autoSizingInput">From</label>
+                  <div class="input-group">
+                    <div class="input-group-text"><img src="./images/school-bus.png" style="width: 25px; height:25px"/></div>
+                    <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="From">
+                  </div>
+                </div>
+                <div class="col-1"><img src="./images/exchange.png" style="width: 20px; height:20px"/></div>
+                <div class="col-3">
+                  <label class="visually-hidden" for="autoSizingInputGroup">To</label>
+                  <div class="input-group">
+                    <div class="input-group-text"><img src="./images/school-bus.png" style="width: 25px; height:25px"/></div>
+                    <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="To">
+                  </div>
+                </div>
+                <div class="col-3">
+                  <label class="visually-hidden" for="autoSizingInputGroup">Date</label>
+                  <div class="input-group">
+                    <div class="input-group-text"><img src="./images/school-bus.png" style="width: 25px; height:25px"/></div>
+                    <input type="date" class="form-control" id="autoSizingInputGroup" placeholder="date">
+                  </div>
+                </div>
+                
+                
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+              
+            </div>
+            </div>
+                       
+            <p class="display-6 text-center fw-bolder p-4 position-relative  " style="color: yellow;">Apno ko, Spno ko, Kareeb Laaye</p>
+            <div class="row d-flex justify-content-center align-items-center ">
+              <div class="col-10 ">
+                <div class="container" style="background-color:white; border:2px solid rgb(196, 189, 189);border-radius:30px; ">
+                  <div class="row">
+                    <div class="col d-flex justify-content-between  my-4  ">
+                      <h2 style="color: rgb(100, 98, 98);">TRENDING OFFERS</h2>
+                      <a href="#" id ="trend_offer"style="text-decoration: none; color: blue; ; border: 1px solid grey;border-radius: 20px; width:100px; height:35px; text-align:center;font-weight: 600;">View All</a>
+                    </div>
+                  </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="card mb-3 m-1" style="max-width: 300px;">
+                                
+                                  
+                                <div class="row no-gutters bg-danger text-white" style="border-radius: 10px;" >
+                                  <div class="col-md-4 d-flex justify-content-center align-items-center ">
+                                    <div class="">
+                                    <img src="./images/tile-274X148.png" class="card-img rounded-circle  " alt="..." />
+                                    </div>
+                                  </div>
+                                  <div class="col-md-8" >
+                                    <div class="card-body">
+                                      <div class="card-title" style="border-radius: 50px ;background-color:     rgb(233, 30, 30); display: inline;">Card title</div>
+                                      <h6 class="card-text">Save upto Rs. 300 on RJ,MH,Goa,MP</h6>
+                                      <p class="card-text"><small class="text-muted">Valid till 30 Nov</small></p>
+                                      <div class="card-title" style="border-radius: 2px ;border:1px dotted black;background-color: rgb(235, 22, 22); display: inline;">Bus300</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            
+                        </div>
+                        <div class="col-3">
+                            <div class="card mb-3 m-1 " style="max-width: 300px;" >
+                                <div class="row no-gutters bg-success  text-white border-3 " style="border-radius: 10px;" >
+                                  <div class="col-md-4 d-flex justify-content-center align-items-center ">
+                                    <div class=" ">
+                                    <img src="./images/247x147.png" class="card-img" alt="..." style="border-radius: 50%;" />
+                                    </div>
+                                  </div>
+                                  <div class="col-md-8" >
+                                    <div class="card-body">
+                                      <div class="card-title" style="border-radius: 50px ;background-color:     rgb(233, 30, 30); display: inline;">Card title</div>
+                                      <h6 class="card-text">Save upto Rs. 300 on RJ,MH,Goa,MP</h6>
+                                      <p class="card-text"><small class="text-muted">Valid till 30 Nov</small></p>
+                                      <div class="card-title" style="border-radius: 2px ;border:1px dotted black;background-color: rgb(235, 22, 22); display: inline;">Bus300</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-3">
+                            <a href="#" >
+                            <div class="card mb-3 m-1" style="max-width: 300px;">
+                                <div class="row no-gutters bg-dark  text-white border-3 " style="border-radius: 10px;"  >
+                                  <div class="col-md-4 d-flex justify-content-center align-items-center ">
+                                    <div class=" ">
+                                    <img src="./images/SUPERHIT.png" class="card-img" alt="..." style="border-radius: 50%;" />
+                                    </div>
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <div class="card-title" style="border-radius: 50px ;background-color:     rgb(233, 30, 30); display: inline;">Card title</div>
+                                      <h6 class="card-text">Save upto Rs. 300 on RJ,MH,Goa,MP</h6>
+                                      <p class="card-text"><small class="text-muted">Valid till 30 Nov</small></p>
+                                      <div class="card-title" style="border-radius: 2px ;border:1px dotted black;background-color: rgb(235, 22, 22); display: inline;">Bus300</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              </a>
+                        </div>
+                        <div class="col-3">
+                          <a href="#" >
+                          <div class="card mb-3 m-1" style="max-width: 300px;">
+                              <div class="row no-gutters bg-warning  text-white border-3 " style="border-radius: 10px;"  >
+                                <div class="col-md-4 d-flex justify-content-center align-items-center ">
+                                  <div class=" ">
+                                  <img src="./images/247x147.png" class="card-img" alt="..." style="border-radius: 50%;" />
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                    <div class="card-title" style="border-radius: 50px ;background-color:     rgb(233, 30, 30); display: inline;">Card title</div>
+                                    <h6 class="card-text">Save upto Rs. 300 on RJ,MH,Goa,MP</h6>
+                                    <p class="card-text"><small class="text-muted">Valid till 30 Nov</small></p>
+                                    <div class="card-title" style="border-radius: 2px ;border:1px dotted black;background-color: rgb(235, 22, 22); display: inline;">Bus300</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            </a>
+                      </div>
+                    </div>
+            
+              </div>
+              </div>
+            </div>
+            <section>
+              <div class="container">
+                <div class="row d-flex justify-content-center align-items-center my-5">
+                  <div class="col-10">
+                    <img src="./images/eb882edd-8d39-4cf1-8d57-a04f6e64f7c1.png" class="img-fluid rounded "alt="">
+                  </div>
+                  </div>
+                </div>
+                
+                
+            </section>
+            
+            <section>
+              <div class="container">
+                <div class="row d-flex justify-content-center align-items-center my-5">
+                  <div class="col">
+                    <div class="container  " >
+                      <div class="row">
+                        <div class="col-6 ">
+                         
+                              <p style="font-size: 40px;">NOW, <b>GET MORE THAN JUST BUS</b> TICKETS WITH REDBUS!</p>
+                            
+                          
+                        </div>
+                      </div>
+                      <div class="=row ">
+                        <div class="col-12 ">
+                          <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist" >
+                              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+                              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+                              
+                            </div>
+                          </nav>
+                          <div class="tab-content" id="nav-tabContent"  >
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                              <div class="row">
+                                <div class="col-6">
+                                 <P class="mt-5 " style="font-size:larger">Rent Cabs, Tempo Travellers & Buses with best drivers</P>
+                                  <div class="row">
+                                    <div class="col-12 my-2 ">
+                                      <ul style="display: inline; text-decoration: none; padding: 0px;">
+                                        <li><img src="./images/baby-car.png" style="width: 10%;"/></li>
+                                        <li><b>Outstation</b></li>
+                                      </ul>
+                                    </div>
+                                    <div class="col-12 my-2">
+                                      <ul style="display: inline; text-decoration: none; padding: 0px;">
+                                        <li><img src="./images/caree.png" style="width: 10%;"/></li>
+                                        <li><b>Hourly Rental</b></li>
+                                      </ul>
+                                    </div>
+                
+                                    <div class="col-12 my-2">
+                                      <ul style="display: inline; text-decoration: none; padding: 0px;">
+                                        <li><img src="./images/airplane.png" style="width: 8%;"/></li>
+                                        <li><b>Airport Transfer</b></li>
+                                      </ul>
+                                    </div>
+                                    <div class="col-12 my-3">
+                                      <a class="btn btn-danger text-white " ><span style="font-weight: 600; font-size: 22px;">Book Cab / Bus Rental &#10230;</span></a>
+                                    </div>
+                                  </div>
+                                 
+                                </div>
+                                <div class="col-6">
+                                  <img src="./images/7657153.jpg" class="img-fluid" >
+                                </div>
+                              </div>
+                              
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                              <div class="row">
+                                <div class="col-6">
+                                  <P class="mt-5" style="font-size:larger">Book IRCTC Train Tickets on redRail simple & superfast booking process with no service fee + no payment gateway charge.</P>
+                                  <div class="row">
+                                    <div class="col-12 my-2 ">
+                                      <ul style="display: inline; text-decoration: none; padding: 0px;">
+                                        <li><img src="./images/train1.png" style="width: 8%;"/></li>
+                                        <li><b>Authorised IRCTC Partner</b></li>
+                                      </ul>
+                                    </div>
+                                    <div class="col-12 my-2">
+                                      <ul style="display: inline; text-decoration: none; padding: 0px;">
+                                        <li><img src="./images/refund.png" style="width: 8%;"/></li>
+                                        <li><b>Instant refunds on UPI payments</b></li>
+                                      </ul>
+                                    </div>
+                
+                                    <div class="col-12 my-2">
+                                      <ul style="display: inline; text-decoration: none; padding: 0px;">
+                                        <li><img src="./images/help-desk.png" style="width: 8%;"/></li>
+                                        <li><b>Hassle- free customer support</b></li>
+                                      </ul>
+                                    </div>
+                                    <div class="col-12 my-3">
+                                      <a class="btn btn-danger text-white " ><span style="font-weight: 600; font-size: 22px;">Book Train Tickets &#10230;</span></a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <img class="mt-5" src="./images/train.jpg" class="img-fluid" style="width: 100%;">
+                                </div>
+                              </div>
+                            </div>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+            </section>
+  
+            <section>
+              <div class="container  border px-4 g-4 overflow-hidden" id="quick_access">
+                <div class="row">
+                 <div class="col "><p>ENJOY THE APP!</p></div>
+                </div>
+                <div class="row p-3">
+                 <div class="col-4 bg-light rounded">
+                   <div class="enjoy">
+                     <div  class="d-flex align-items-center gap-2 "><span class="fa fa-check-circle" style="font-size:20px;color:green"></span><p style="font-size: 20px;" class="text-muted  ">Quick access</p></div>
+                     <div  class="d-flex align-items-center gap-2 "><span class="fa fa-check-circle" style="font-size:20px;color:green"></span><p style="font-size: 20px;" class="text-muted">Superior live tracking</p></div>
+                   </div>
+                   <div class="d-lg-flex  gap-3">
+                   <div class="d-inline-flex   flex-column gap-3">
+                     <div class="d-flex gap-2 align-items-center "><h4 style="margin: 0px;">4.5</h4><span class="fa fa-star" style="font-size: 20px;"></span></div>
+                     <div class="d-flex gap-2 align-items-center   "><span>50M + downloads</span></div>
+                     <div class="d-flex gap-2 align-items-center "><h6>Play store</h6><span class="fa fa-star" style="font-size: 20px;"></span></div>
+                   </div>
+                   <div class="vertical-line"></div>
+                   <div class="d-inline-flex  flex-column gap-3" >
+                     <div class="d-flex gap-2 align-items-center "><h4 style="margin: 0px;">4.6</h4><span class="fa fa-star" style="font-size: 20px;"></span></div>
+                     <div class="d-flex gap-2 align-items-center   "><span>50M + downloads</span></div>
+                     <div class="d-flex gap-2 align-items-center "><h6>App store</h6><span class="fa fa-star" style="font-size: 20px;"></span></div>
+                   </div>
+                   </div>
+                 </div>
+                 <div class="col-4  d-lg-inline-flex  justify-content-around ">
+                   <div class="d-flex flex-column gap-3  mt-5 ">
+                     <b class="text-white ">scan to <br>download</b>
+                     <img src="./images/qr-code_714390.png" width="100px" class="bg-light border rounded  "/>
+                   </div>
+           
+                   <div class="d-flex flex-column gap-3 mt-5  ">
+                     <b class="text-white ">Download the <br>App on</b>
+                     <img src="./images/png-transparent-get-it-on-google-play-button-thumbnail.png" width="140PX" class="bg-light border rounded  "/>
+                     <img src="./images/app-store-and-google-play.jpg" width="140PX" class="bg-light border rounded  "/>
+                   </div>
+                 </div>
+                 
+                 
+                 
+                </div>
+               </div>
+              
+            </section>
+            <section class="mt-4 ">
+              <div class="container mt-5">
+                <div class="row justify-content-center ">
+                  <div class="col-6">
+                    <img class="img-fluid " src="./images/primo.png"/>
+                  </div>
+                </div>
+                
+                <div class="row justify-content-evenly mt-3">
+                  <div class="col-3 " id="primo" >
+                    <div class="d-lg-inline-flex justify-content-between align-items-center  gap-4 m-2">
+                      <div class="d-flex">
+                        <img class="" " src="./images/pie-chart (1).png" width="80px" height="80px">
+                      </div>
+                      <div class="">
+                        <p style="font-size: 22px; line-height: 27px;font-weight: 700;">1 of 5 buses <br>qualify</p>
+                        <p style="font-size: 13px;line-height: 20px;font-weight: 500;">Primo’s strict safety<br> qualification ensures a<br> safer travel for you</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3" id="primo">
+                    <div class="d-lg-inline-flex justify-content-between align-items-center  gap-4 m-2">
+                      <div class="d-flex">
+                        <img class="" " src="./images/growth.png" width="80px" height="80px">
+                      </div>
+                      <div class="">
+                        <p style="font-size: 22px; line-height: 27px;font-weight: 700;">Preferred by 90%</p>
+                        <p style="font-size: 13px;line-height: 20px;font-weight: 500;">90% of travellers re-book Primo buses for its punctuality and comfort</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 " id="primo">
+                    <div class="d-lg-inline-flex justify-content-between align-items-center  gap-4 m-2">
+                      <div class="d-flex">
+                        <img class="" " src="./images/data-management.png" width="80px" height="80px">
+                      </div>
+                      <div class="">
+                        <p style="font-size: 22px; line-height: 27px;font-weight: 700;">9 Lac+ monthly travellers</p>
+                        <p style="font-size: 13px;line-height: 20px;font-weight: 500;">In 2022, 9 Lac+ people traveled with Primo every month</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+              </div>
+          
+            </section>
+            <section class="mt-5 mb-5">
+
+              <div class="container gap-3 ">
+                <div  class="row">
+                  <div class="col" >
+                    <p style="font-size: 2.5rem;line-height: 3rem;margin: 0px 0px 3rem;font-weight: 400;">PARTNERED WITH</p>
+                  </div>
+                </div>
+          
+                <div  class="row justify-content-between align-items-center mb-4 " id="partnered" >
+                  <div class="col-3"><p style="font-size: 1.5rem;line-height: 3rem;font-weight: 400;">25 RTCs</p></div>
+                  <div class="col-3"><a href="#"class="btn" style="text-decoration: none; border-radius: 10px; border:1px solid grey; padding: .5rem 1.5rem ; font-size:18px;color:rgb(112, 107, 107);float: right;">View All</a></div>
+          
+                </div>
+          
+                <div  class="row">
+                  <div class="parent" >
+                    <div class="child">
+                        <a href="#">
+                        <div class="child_img" ><img src="./images/10283.png"/></div>
+                        <div class="child_p">APSRTC</div>
+                        </a>
+                    </div>
+                    <div class ="child">
+                        <a href="#">
+                            <div class="child_img" ><img src="./images/gsrtc.png"/></div>
+                            <div class="child_p">GSRTC</div>
+                            </a>
+                    </div>
+                    <div class="child">
+                        <a href="#">
+                            <div class="child_img" ><img src="./images/TSRTC.png"/></div>
+                            <div class="child_p">TSRTC</div>
+                        </a>
+                    </div>
+                    <div class="child">
+                        <a href="#">
+                        <div class="child_img" ><img src="./images/10823.png"/></div>
+                        <div class="child_p">MSRTC</div>
+                        </a>
+                    </div>
+                    <div class ="child">
+                        <a href="#">
+                            <div class="child_img" ><img src="./images/krtc.jpg"/></div>
+                            <div class="child_p">Kerla RTC</div>
+                            </a>
+                    </div>
+                    <div class="child">
+                        <a href="#">
+                            <div class="child_img" ><img src="./images/16426.png"/></div>
+                            <div class="child_p">SBSTC</div>
+                            </a>
+                    </div>
+                    <div class="child">
+                        <a href="#">
+                            <div class="child_img" ><img src="./images/rstrc.jpg"/></div>
+                            <div class="child_p">RSRTC</div>
+                            </a>
+                    </div>
+                    <div class ="child">
+                        <a href="#">
+                            <div class="child_img" ><img src="./images/upstrc.png"/></div>
+                            <div class="child_p">UPSRTC</div>
+                            </a>
+                    </div>
+                    
+                </div>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="container gap-3" style="margin-top: 5rem;">
+      
+
+                <div  class="row justify-content-between align-items-center mb-4 " id="partnered" >
+                  <div class="col-5"><p style="font-size: 2rem;line-height: 3rem;font-weight: 400;">3500+ Private Bus Operators </p></div>
+                  <div class="col-3"><a href="#"class="btn" style="text-decoration: none; border-radius: 10px; border:1px solid grey; padding: .5rem 1.5rem ; font-size:18px;color:rgb(112, 107, 107);float: right;">View All</a></div>
+          
+                </div>
+          
+                <div  class="row gap-4">
+                  <div class="col-2 private_bus" >
+                    <ul>
+                     
+                      <li><a href="">SRS Travels</a></li>
+                      <li><a href="">Orange Travels</a> </li>
+                      <li><a href="">Charted Speed Bus</a></li>
+                      <li><a href="">Patel Travels</a></li>
+                      <li><a href="">Kankher Travels</a></li>
+                      
+                    </ul>
+                  </div>
+                  <div class="col-2 private_bus" >
+                    <ul>
+                      <li><a href="">Evacay Bus</a></li>
+                      <li><a href="">Rajdhani Express</a> </li>
+                      <li><a href="">Infant Jesus</a></li>
+                      <li><a href="">Kanker Roadways</a></li>
+                      <li><a href="">Raj Express</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-2 private_bus" >
+                    <ul>
+                      <li><a href="">Kallada Travels</a></li>
+                      <li><a href="">VRL Travels</a> </li>
+                      <li><a href="">Patel Travels  </a></li>
+                      <li><a href="">Komitla Travels</a></li>
+                      <li><a href="">Sharama Travels</a></li>
+                     
+                    </ul>
+                  </div>
+                  <div class="col-2 private_bus" >
+                    <ul>
+                      <li><a href="">KPN Travels</a></li>
+                      <li><a href="">Charted Speed Bus</a> </li>
+                      <li><a href="">JBT Travels</a></li>
+                      <li><a href="">Sri Krishna Travles</a></li>
+                      <li><a href="">Srinath Travles</a></li>
+                      
+                    </ul>
+                  </div>
+                  <div class="col-2 private_bus" >
+                    <ul>
+                      <li><a href="">Orange Travels</a></li>
+                      <li><a href="">Bengal Tiger</a> </li>
+                      <li><a href="">Shatabdi Travels</a></li>
+                      <li><a href="">Humsafar Travles</a></li>
+                      
+                      
+                    </ul>
+                  </div>
+              </div>
+              
+            </section>
+
+            <section class="mt-5 mb-5">
+              <div class="container gap-3 ">
+                <div  class="row">
+                  <div class="col" >
+                    <p style="font-size: 2.5rem;line-height: 3rem;margin: 0px 0px 3rem;font-weight: 400;">GLOBAL PRESENCE</p>
+                  </div>
+                </div>
+          
+               
+          
+                <div  class="row">
+                  <div class="parentglobal" >
+                    <div class="childglobal">
+                        <a href="#">
+                        <div class="child_img" ><img src="./images/Flag_of_Colombia.png"/></div>
+                        <div class="child_p country">Colombia</div>
+                        </a>
+                    </div>
+                    <div class ="childglobal">
+                        <a href="#">
+                            <div class="child_img" ><img src="./images/india.avif"/></div>
+                            <div class="child_p country">India</div>
+                            </a>
+                    </div>
+                    <div class="childglobal">
+                        <a href="#">
+                            <div class="child_img" ><img src="./images/flag-indonesia.jpg"/></div>
+                            <div class="child_p country">Indonesia</div>
+                        </a>
+                    </div>
+                    <div class="childglobal">
+                        <a href="#">
+                        <div class="child_img" ><img src="./images/malaysia.jpg"/></div>
+                        <div class="child_p country">Malaysia</div>
+                        </a>
+                    </div>
+                    <div class ="childglobal">
+                        <a href="#">
+                            <div class="child_img" ><img src="./images/peru.png"/></div>
+                            <div class="child_p country">Peru</div>
+                            </a>
+                    </div>
+                    <div class="childglobal">
+                        <a href="#">
+                            <div class="child_img" ><img src="./images/siggapore.png"/></div>
+                            <div class="child_p country">Singapore</div>
+                            </a>
+                    </div>
+                    
+                </div>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <div class="container gap-3 bg-light">
+                <div  class="row mt-5">
+                  <div class="col" >
+                    <p style="font-size: 2.5rem;line-height: 3rem;margin: 0px 0px 2.5rem;font-weight: 400;">BOOK BUS TICKETS ONLINE</p>
+                  </div>
+                </div>
+          
+               
+          
+                <div  class="row">
+                  <div class="col">
+                    <p>redBus is India's largest brand for online bus ticket booking and offers an easy-to-use online bus ticket and train ticket booking service, With over 36 million satisfied customers, 3500+ bus operators to choose from, and plenty of offers on bus ticket booking, redBus makes road journeys super convenient for travelers. A leading platform for booking bus tickets, redBus has been the leader in online bus booking over the past 17 years across thousands of cities and lakhs of routes in India.</p>
+                    <p>
+                      Booking a bus ticket online on redBus app or website is very simple. You can download the redBus app or visit redbus.in and enter your source, destination & travel date to check the top-rated bus services available. You can then compare prices, ratings & amenities, select your preferred seat, boarding & dropping points and make the payment using multiple payment options like UPI, debit or credit card, net banking and more. With redBus you can be assured of safe & secure payment methods and guaranteed travel with the best seat and bus operator of your choice. </p>
+                      
+                      <div id="collapse" class="collapse">
+          
+                       <p> Once the payment is confirmed, all you have to do is pack your bags and get ready to travel with the m-ticket which you can show to the bus operator on your mobile before boarding the bus. Online bus ticket booking with redBus is that simple!</p>
+          
+                        <p>redBus also offers other exclusive benefits on online bus tickets like flexible ticket reschedule options, easy & friendly cancellation policies, instant payment refund. With live bus tracking feature, you can plan your travel and never miss the bus. You can get the cheapest bus tickets by availing the best discounts for new & existing customers. With redDeals, you can also get exclusive & additional discounts on your online bus ticket booking. You will get 24X7 customer support on call, chat & help to resolve all your queries in English & local languages.</p>
+                      </div>
+                      <a  data-bs-toggle="collapse" href="#collapse" role="button" aria-expanded="false" aria-controls="collapse1" data-target="collapse" id="readmore" >Read More</a>
+                      <script>
+                        let readMoreBtn = document.querySelector("#readmore")
+                        console.log(readMoreBtn)
+                        if(readMoreBtn){
+              
+                            readMoreBtn.addEventListener("click", () => {
+                            
+                            if (readMoreBtn.innerHTML === "Read More") {
+                                readMoreBtn.innerHTML = "Read Less";
+                            } else {
+                                readMoreBtn.innerHTML = "Read More";
+                            }
+                        });}
+          
+                      </script>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="container gap-3 bg-light  my-4">
+                <div  class="row">
+                  <div class="col my-4" >
+                    <p style="font-size: 2.5rem;line-height: 3rem;font-weight: 400;">Today’s Exclusive redDeals on redBus</p>
+                    <p style="font-size: 1.2rem; font-weight: 400;line-height: 2rem; margin-bottom:30px;">Don't miss out on these incredible offers, book your tickets now and travel with convenience and affordability. Hurry, grab the best deals before they're gone!</p>
+                  </div>
+                </div>
+          
+                <div  class="row ">
+                  <div class="col p-5 border d-flex align-items-center justify-content-between " style="border-radius: 20px;">
+                    <div class="col-2 m-3 "><img src="./images/redbus-logo.png" style="width: 60%;"></div>
+                    <div>
+                      <div class="col-12"><p style="font-size:1.8rem;font-weight: 500;">Unlock Unbeatable Exclusive redDeals! <span class="text-danger mb-2 ">20% OFF</span></p></div>
+                      <div class="col-12"><p class="h5"><span class="text-danger ">4306</span> Deals | <span class="text-danger ">1802</span> Bus Operators | <span class="text-danger ">223405</span> Routes</p>
+                      </p>
+                    </div>
+                    </div>
+                    <div class="col-2"><button class="btn btn-danger btn-lg " style="float:right;">Book Now</button></div>
+                  </div>
+                </div>
+              </div>
+          
+            </section>
+            cd
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+    <!-- <style>
+        .container{
+             display: flex;  
+            height: 40vh;
+            justify-content: center;
+            align-items: center; 
+            background-color: aqua;
+        }
+        .search{
+            background-color: red;
+            width: 90%;
+            height: 30%;
+            border-radius: 50px;
+            align-self: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .inline{
+            display: inline;
+        }
+
+        .row{
+            background-color: blueviolet;
+            height: 20vh;
+            border-radius: 50px;
+        }
+        .col{
+            background-color: bisque;
+           
+        }
+        #search_form
+        {
+            background-color: red;
+            border-radius: 50px;
+            height: 40%;
+        }
+    </style> -->
+    <!-- <style>
+      li{
+        display: inline;
+        text-decoration: none;
+        padding-left: 10px;
+      }
+    </style> -->
+    <!-- <style>
+      #quick_access{
+        border-radius: 15px;
+        background-color: rgb(194, 67, 67);
+        background-image: url(../images/red-suitcase-with-lid-hat-it_786255-134.avif);
+        background-size: 600px;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+
+      }
+
+      #quick_access  p{
+        font-size: 43px;
+        /* margin-top: 10px;
+        margin-bottom: 10px; */
+        color: rgba(255, 255, 255, 0.863);
+        
+      }
+      .enjoy{
+        display: inline-flex;
+        flex-direction: column;
+        margin-top: 2.20em;
+        margin-bottom: 2.25em;
+        
+      }
+      .enjoy p{
+        font-size: 10px;
+        
+      }
+      .vertical-line { 
+   width: 1px; 
+   background-color: rgb(204, 201, 201); 
+} 
+    </style> -->
+    <style>
+      .parent{
+          display: flex;
+          border:1ps solid black;
+          justify-content: center;
+          align-items: center;
+      }
+      .child{
+          width: 150px;
+          height: 150px;
+         
+          text-align: center;
+          
+      }
+      .child_img{
+          background-color: blueviolet;
+          width: 120px;
+          height: 120px ;
+          margin: .4rem .5rem;
+
+      }
+      .child_p{
+          text-align: center;
+          text-decoration: none;
+      }
+
+      .child a{
+          text-decoration: none;
+          color: rgb(49, 46, 46);
+      }
+      .child_img img{
+         
+          width: 100%;
+          height: 100% ;
+         
+
+      }
+      .private_bus  ul{
+        padding: 1px;
+        
+      }
+      .private_bus  li{
+        list-style-type: none;
+        color: rgb(78, 75, 75);
+        font-size: 18px;
+        padding: 1.2rem 0;
+        border-radius: 30px;
+        display: inline-block;
+        
+
+      }
+      .private_bus  li:hover{
+        background-color: rgb(240, 243, 241);
+      }
+
+      .private_bus  a{
+        text-decoration: none;
+        color: rgb(78, 75, 75);
+        
+        
+
+      }
+
+      .accordion-button::after {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+      }
+      .accordion-button:not(.collapsed)::after {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+          }
+
+      .accordion{
+        --bs-accordion-button-color:black;
+          }
+  </style>
+</head>
+<body>
+    <!-- <div class="container">
+        
+       <div class="search">
+        <div class="form_items">
+        <form >
+            <div class="inline"><input type="text" id="from" placeholder="From" ></div>
+            <div class="inline"><img src="../images/icons8-user-64.png" style="height: 20px;"/></div>
+            <div class="inline"><input type="text" id="to" placeholder="To" ></div>
+            <div class="inline"><input type="button" id="from" value="Search" ></div>
+        </form>
+       </div>
+    </div> -->
+
+    
+      
+        <!-- <div class="container" style="background-color:white; border:2px solid rgb(196, 189, 189);border-radius:30px; ">
+          <div class="row   ">
+            <div class="col d-flex justify-content-between my-4  ">
+              <h2 style="color: rgb(100, 98, 98);">TRENDING OFFERS</h2>
+              <a href="#" id ="trend_offer"style="text-decoration: none; color: blue; padding-top: 10px; border: 1px solid grey;border-radius: 5px; width:100px; text-align:center;font-weight: 600;">View All</a>
+            </div>
+          </div>
+            <div class="row">
+                <div class="col-3">
+                    <div class="card mb-3 m-1" style="max-width: 300px;">
+                        
+                          
+                        <div class="row no-gutters bg-danger text-white" style="border-radius: 10px;" >
+                          <div class="col-md-4 d-flex justify-content-center align-items-center ">
+                            <div class=" ">
+                            <img src="../images/redbackgr1.avif" class="card-img" alt="..." style="border-radius: 50%;" />
+                            </div>
+                          </div>
+                          <div class="col-md-8" >
+                            <div class="card-body">
+                              <div class="card-title" style="border-radius: 50px ;background-color:     rgb(233, 30, 30); display: inline;">Card title</div>
+                              <h6 class="card-text">Save upto Rs. 300 on RJ,MH,Goa,MP</h6>
+                              <p class="card-text"><small class="text-muted">Valid till 30 Nov</small></p>
+                              <div class="card-title" style="border-radius: 2px ;border:1px dotted black;background-color: rgb(235, 22, 22); display: inline;">Bus300</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    
+                </div>
+                <div class="col-3">
+                    <div class="card mb-3 m-1 " style="max-width: 300px;" >
+                        <div class="row no-gutters bg-success  text-white border-3 " style="border-radius: 10px;" >
+                          <div class="col-md-4 d-flex justify-content-center align-items-center ">
+                            <div class=" ">
+                            <img src="../images/redbackgr1.avif" class="card-img" alt="..." style="border-radius: 50%;" />
+                            </div>
+                          </div>
+                          <div class="col-md-8" >
+                            <div class="card-body">
+                              <div class="card-title" style="border-radius: 50px ;background-color:     rgb(233, 30, 30); display: inline;">Card title</div>
+                              <h6 class="card-text">Save upto Rs. 300 on RJ,MH,Goa,MP</h6>
+                              <p class="card-text"><small class="text-muted">Valid till 30 Nov</small></p>
+                              <div class="card-title" style="border-radius: 2px ;border:1px dotted black;background-color: rgb(235, 22, 22); display: inline;">Bus300</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-3">
+                    <a href="#" >
+                    <div class="card mb-3 m-1" style="max-width: 300px;">
+                        <div class="row no-gutters bg-dark  text-white border-3 " style="border-radius: 10px;"  >
+                          <div class="col-md-4 d-flex justify-content-center align-items-center ">
+                            <div class=" ">
+                            <img src="../images/redbackgr1.avif" class="card-img" alt="..." style="border-radius: 50%;" />
+                            </div>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <div class="card-title" style="border-radius: 50px ;background-color:     rgb(233, 30, 30); display: inline;">Card title</div>
+                              <h6 class="card-text">Save upto Rs. 300 on RJ,MH,Goa,MP</h6>
+                              <p class="card-text"><small class="text-muted">Valid till 30 Nov</small></p>
+                              <div class="card-title" style="border-radius: 2px ;border:1px dotted black;background-color: rgb(235, 22, 22); display: inline;">Bus300</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      </a>
+                </div>
+                <div class="col-3">
+                  <a href="#" >
+                  <div class="card mb-3 m-1" style="max-width: 300px;">
+                      <div class="row no-gutters bg-warning  text-white border-3 " style="border-radius: 10px;"  >
+                        <div class="col-md-4 d-flex justify-content-center align-items-center ">
+                          <div class=" ">
+                          <img src="../images/redbackgr1.avif" class="card-img" alt="..." style="border-radius: 50%;" />
+                          </div>
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <div class="card-title" style="border-radius: 50px ;background-color:     rgb(233, 30, 30); display: inline;">Card title</div>
+                            <h6 class="card-text">Save upto Rs. 300 on RJ,MH,Goa,MP</h6>
+                            <p class="card-text"><small class="text-muted">Valid till 30 Nov</small></p>
+                            <div class="card-title" style="border-radius: 2px ;border:1px dotted black;background-color: rgb(235, 22, 22); display: inline;">Bus300</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+              </div>
+            </div>
+    
+      </div> -->
+      
+      <!-- <div class="container d-flex justify-content-center  p-4"> 
+        <div class="card mb-3 m-1" style="max-width:300px;"> 
+            <div class="row g-0 "> 
+                <div class="col-md-6"> 
+                    <img src= 
+"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png" 
+                        class="img-fluid rounded-start" alt="..." > 
+                </div> 
+                <div class="col-md-6"> 
+                    <div class="card-body"> 
+                        <h5 class="card-title"> 
+                            Data Structures 
+                        </h5> 
+                        <p class="card-text"> 
+                            A data structure is a storage that is  
+                            used to store and organize data.  
+                        </p> 
+                        <p class="card-text"> 
+                            <small class="text-muted"> 
+                                Last updated now 
+                            </small> 
+                        </p> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+        <div class="card mb-3 m-1 " style="max-width:300px;"> 
+            <div class="row g-0"> 
+                <div class="col-md-6"> 
+                    <img src= 
+"https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200x200-min.png" 
+                        class="img-fluid rounded-start" 
+                        alt="..."> 
+                </div> 
+                <div class="col-md-6"> 
+                    <div class="card-body"> 
+                        <h5 class="card-title">Algorithms</h5> 
+                        <p class="card-text"> 
+                            Algorithm refers to a sequence of  
+                            finite steps to solve a particular problem.  
+                        </p> 
+                        <p class="card-text"> 
+                            <small class="text-muted"> 
+                                Last updated now 
+                            </small> 
+                        </p> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </div>  -->
+    <!-- <div class="container border " >
+      <div class="row">
+        <div class="col-6 ">
+         
+              <p style="font-size: 40px;">NOW, <b>GET MORE THAN JUST BUS</b> TICKETS WITH REDBUS!</p>
+            
+          
+        </div>
+      </div>
+      <div class="=row ">
+        <div class="col-12 ">
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist" >
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+              
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent"  >
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+              <div class="row">
+                <div class="col-6">
+                 <P class="mt-5 " style="font-size:larger">Rent Cabs, Tempo Travellers & Buses with best drivers</P>
+                  <div class="row">
+                    <div class="col-12 my-2 ">
+                      <ul style="display: inline; text-decoration: none; padding: 0px;">
+                        <li><img src="../images/baby-car.png" style="width: 10%;"/></li>
+                        <li><b>Outstation</b></li>
+                      </ul>
+                    </div>
+                    <div class="col-12 my-2">
+                      <ul style="display: inline; text-decoration: none; padding: 0px;">
+                        <li><img src="../images/caree.png" style="width: 10%;"/></li>
+                        <li><b>Hourly Rental</b></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-12 my-2">
+                      <ul style="display: inline; text-decoration: none; padding: 0px;">
+                        <li><img src="../images/airplane.png" style="width: 8%;"/></li>
+                        <li><b>Airport Transfer</b></li>
+                      </ul>
+                    </div>
+                    <div class="col-12 my-3">
+                      <a class="btn btn-danger text-white " ><span style="font-weight: 600; font-size: 22px;">Book Cab / Bus Rental &#10230;</span></a>
+                    </div>
+                  </div>
+                 
+                </div>
+                <div class="col-6">
+                  <img src="../images/7657153.jpg" class="img-fluid" >
+                </div>
+              </div>
+              
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+              <div class="row">
+                <div class="col-6">
+                  <P class="mt-5" style="font-size:larger">Book IRCTC Train Tickets on redRail simple & superfast booking process with no service fee + no payment gateway charge.</P>
+                  <div class="row">
+                    <div class="col-12 my-2 ">
+                      <ul style="display: inline; text-decoration: none; padding: 0px;">
+                        <li><img src="../images/train1.png" style="width: 8%;"/></li>
+                        <li><b>Authorised IRCTC Partner</b></li>
+                      </ul>
+                    </div>
+                    <div class="col-12 my-2">
+                      <ul style="display: inline; text-decoration: none; padding: 0px;">
+                        <li><img src="../images/refund.png" style="width: %;"/></li>
+                        <li><b>Instant refunds on UPI payments</b></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-12 my-2">
+                      <ul style="display: inline; text-decoration: none; padding: 0px;">
+                        <li><img src="../images/help-desk.png" style="width: 8%;"/></li>
+                        <li><b>Hassle- free customer support</b></li>
+                      </ul>
+                    </div>
+                    <div class="col-12 my-3">
+                      <a class="btn btn-danger text-white " ><span style="font-weight: 600; font-size: 22px;">Book Train Tickets &#10230;</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-5">
+                  <img class="mt-5" src="../images/train.jpg" class="img-fluid" style="width: 100%;">
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div> -->
+    
+    <!-- <div class="container  border px-4 g-4 overflow-hidden" id="quick_access">
+
+     <div class="row">
+      <div class="col "><p>ENJOY THE APP!</p></div>
+     </div>
+     <div class="row p-3">
+      <div class="col-4 bg-light rounded">
+        <div class="enjoy">
+          <div  class="d-flex align-items-center gap-2 "><span class="fa fa-check-circle" style="font-size:20px;color:green"></span><p style="font-size: 20px;" class="text-muted  ">Quick access</p></div>
+          <div  class="d-flex align-items-center gap-2 "><span class="fa fa-check-circle" style="font-size:20px;color:green"></span><p style="font-size: 20px;" class="text-muted">Superior live tracking</p></div>
+        </div>
+        <div class="d-lg-flex  gap-3">
+        <div class="d-inline-flex   flex-column gap-3">
+          <div class="d-flex gap-2 align-items-center "><h4 style="margin: 0px;">4.5</h4><span class="fa fa-star" style="font-size: 20px;"></span></div>
+          <div class="d-flex gap-2 align-items-center   "><span>50M + downloads</span></div>
+          <div class="d-flex gap-2 align-items-center "><h6>Play store</h6><span class="fa fa-star" style="font-size: 20px;"></span></div>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="d-inline-flex  flex-column gap-3">
+          <div class="d-flex gap-2 align-items-center "><h4 style="margin: 0px;">4.5</h4><span class="fa fa-star" style="font-size: 20px;"></span></div>
+          <div class="d-flex gap-2 align-items-center   "><span>50M + downloads</span></div>
+          <div class="d-flex gap-2 align-items-center "><h6>Play store</h6><span class="fa fa-star" style="font-size: 20px;"></span></div>
+        </div>
+        </div>
+      </div>
+      <div class="col-4  d-lg-inline-flex  justify-content-around ">
+        <div class="d-flex flex-column gap-3  mt-5 ">
+          <b class="text-white ">scan to <br>download</b>
+          <img src="../images/qr-code_714390.png" width="100px" class="bg-light border rounded  "/>
+        </div>
+
+        <div class="d-flex flex-column gap-3 mt-5  ">
+          <b class="text-white ">Download the <br>App on</b>
+          <img src="../images/png-transparent-get-it-on-google-play-button-thumbnail.png" width="140PX" class="bg-light border rounded  "/>
+          <img src="../images/app-store-and-google-play.jpg" width="140PX" class="bg-light border rounded  "/>
+        </div>
+      </div>
+      
+      
+      
+     </div>
+    </div> -->
+    <!-- <div class="container ">
+      <div class="row border justify-content-center ">
+        <div class="col-6">
+          <img class="img-fluid " src="../images/primo.png"/>
+        </div>
+      </div>
+      
+      <div class="row justify-content-evenly border ">
+        <div class="col-3 border " id="primo" >
+          <div class="d-lg-inline-flex justify-content-between align-items-center  gap-4 m-2">
+            <div class="d-flex">
+              <img class="" " src="../images/pie-chart (1).png" width="80px" height="80px">
+            </div>
+            <div class="">
+              <p style="font-size: 22px; line-height: 27px;font-weight: 700;">1 of 5 buses <br>qualify</p>
+              <p style="font-size: 13px;line-height: 20px;font-weight: 500;">Primo’s strict safety<br> qualification ensures a<br> safer travel for you</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 border " id="primo">
+          <div class="d-lg-inline-flex justify-content-between align-items-center  gap-4 m-2">
+            <div class="d-flex">
+              <img class="" " src="../images/growth.png" width="80px" height="80px">
+            </div>
+            <div class="">
+              <p style="font-size: 22px; line-height: 27px;font-weight: 700;">Preferred by 90%</p>
+              <p style="font-size: 13px;line-height: 20px;font-weight: 500;">90% of travellers re-book Primo buses for its punctuality and comfort</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 border " id="primo">
+          <div class="d-lg-inline-flex justify-content-between align-items-center  gap-4 m-2">
+            <div class="d-flex">
+              <img class="" " src="../images/data-management.png" width="80px" height="80px">
+            </div>
+            <div class="">
+              <p style="font-size: 22px; line-height: 27px;font-weight: 700;">9 Lac+ monthly travellers</p>
+              <p style="font-size: 13px;line-height: 20px;font-weight: 500;">In 2022, 9 Lac+ people traveled with Primo every month</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div> -->
+    <!-- <div class="container gap-3" style="margin-top: 5rem;">
+      
+
+      <div  class="row justify-content-between align-items-center mb-4 " id="partnered" >
+        <div class="col-5"><p style="font-size: 2rem;line-height: 3rem;font-weight: 400;">3500+ Private Bus Operators </p></div>
+        <div class="col-3"><a href="#"class="btn" style="text-decoration: none; border-radius: 10px; border:1px solid grey; padding: .5rem 1.5rem ; font-size:18px;color:rgb(112, 107, 107);float: right;">View All</a></div>
+
+      </div>
+
+      <div  class="row gap-4">
+        <div class="col-2 private_bus" >
+          <ul>
+           
+            <li><a href="">SRS Travels</a></li>
+            <li><a href="">Orange Travels</a> </li>
+            <li><a href="">Charted Speed Bus</a></li>
+            <li><a href="">Patel Travels</a></li>
+            <li><a href="">Kankher Travels</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-2 private_bus" >
+          <ul>
+            <li><a href="">Evacay Bus</a></li>
+            <li><a href="">Rajdhani Express</a> </li>
+            <li><a href="">Infant Jesus</a></li>
+            <li><a href="">Kanker Roadways</a></li>
+            <li><a href="">Raj Express</a></li>
+          </ul>
+        </div>
+        <div class="col-2 private_bus" >
+          <ul>
+            <li><a href="">Kallada Travels</a></li>
+            <li><a href="">VRL Travels</a> </li>
+            <li><a href="">Patel Travels  </a></li>
+            <li><a href="">Komitla Travels</a></li>
+            <li><a href="">Sharama Travels</a></li>
+           
+          </ul>
+        </div>
+        <div class="col-2 private_bus" >
+          <ul>
+            <li><a href="">KPN Travels</a></li>
+            <li><a href="">Charted Speed Bus</a> </li>
+            <li><a href="">JBT Travels</a></li>
+            <li><a href="">Sri Krishna Travles</a></li>
+            <li><a href="">Srinath Travles</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-2 private_bus" >
+          <ul>
+            <li><a href="">Orange Travels</a></li>
+            <li><a href="">Bengal Tiger</a> </li>
+            <li><a href="">Shatabdi Travels</a></li>
+            <li><a href="">Humsafar Travles</a></li>
+            
+            
+          </ul>
+        </div>
+    </div>
+    
+
+    -->
+
+
+    <!-- <div class="container gap-3 bg-light  ">
+      <div  class="row">
+        <div class="col my-4" >
+          <p style="font-size: 2.5rem;line-height: 3rem;font-weight: 400;">Today’s Exclusive redDeals on redBus</p>
+          <p style="font-size: 1.2rem; font-weight: 400;line-height: 2rem; margin-bottom:30px;">Don't miss out on these incredible offers, book your tickets now and travel with convenience and affordability. Hurry, grab the best deals before they're gone!</p>
+        </div>
+      </div>
+
+      <div  class="row ">
+        <div class="col p-5 border d-flex align-items-center justify-content-between " style="border-radius: 20px;">
+          <div class="col-2 m-3 "><img src="../images/redbus-logo.png" style="width: 60%;"></div>
+          <div>
+            <div class="col-12"><p style="font-size:1.8rem;font-weight: 500;">Unlock Unbeatable Exclusive redDeals! <span class="text-danger mb-2 ">20% OFF</span></p></div>
+            <div class="col-12"><p class="h5"><span class="text-danger ">4306</span> Deals | <span class="text-danger ">1802</span> Bus Operators | <span class="text-danger ">223405</span> Routes</p>
+            </p>
+          </div>
+          </div>
+          <div class="col-2"><button class="btn btn-danger btn-lg " style="float:right;">Book Now</button></div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="accordion container" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header ">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Can I track the location of my booked bus online?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Yes, you can track your bus online by using our bus tracking app feature called “Track My Bus”. This feature allows passengers and their families to track the live bus tracking location. You may follow your bus on a map and use the information to plan your trip to the boarding point and to get off at the correct stop. Family and friends may also check the bus position to plan pick-ups and ensure your safety.          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Accordion Item #2
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Accordion Item #3
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
