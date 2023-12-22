@@ -152,3 +152,49 @@ background-color: rgb(204, 201, 201);
   color: black;
   font-weight: 700;
 }
+.accordion-button{
+  background-color: rgb(253, 251, 251);
+ 
+}
+.nav-link{
+  color: black;
+}
+.nav-link:hover{
+  color: rgb(207, 62, 62);
+  
+}
+.accordion-button:not(.collapsed){
+ color:rgb(39, 38, 38);
+ 
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+    }
+
+    .contactdetail  li{
+      list-style-type: none;
+      color: rgb(78, 75, 75);
+      font-size: 16px;
+      padding: .3rem 0;
+      display: block;
+      
+    
+    }
+    
+    
+    .contactdetail  a{
+      text-decoration: none;
+      color: rgb(114, 111, 111);
+      
+      
+    
+    }
+    .horizontal-line{
+    
+      height: 1px;
+      background-color: rgb(226, 219, 219);
+    }

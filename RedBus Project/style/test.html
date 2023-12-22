@@ -157,9 +157,26 @@
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
           }
 
-      .accordion{
-        --bs-accordion-button-color:black;
+      .accordion-button:not(.collapsed){
+        color: black;
+       
+        
+        
           }
+        .accordion-button{
+          background-color: rgb(253, 251, 251);
+        }
+        .nav-link{
+          color: black;
+        }
+        .nav-link:hover{
+          color: rgb(207, 62, 62);
+          
+        }
+        
+        
+        
+       
   </style>
 </head>
 <body>
@@ -593,42 +610,265 @@
       </div>
     </div> -->
 
-    <div class="accordion container" id="accordionExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header ">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Can I track the location of my booked bus online?
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            Yes, you can track your bus online by using our bus tracking app feature called “Track My Bus”. This feature allows passengers and their families to track the live bus tracking location. You may follow your bus on a map and use the information to plan your trip to the boarding point and to get off at the correct stop. Family and friends may also check the bus position to plan pick-ups and ensure your safety.          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Accordion Item #2
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+
+
+    <div class="container">
+      <div class="row d-flex justify-content-center align-items-center my-5">
+        <div class="col">
+          <div class="container  " >
+            <div class="row">
+              <div class="col-6 ">
+               
+                    <p style="font-size: 40px;">FAQs</p>
+                  
+                
+              </div>
+            </div>
+            <div class="=row ">
+              <div class="col-12 ">
+                <nav>
+                  <div class="nav nav-tabs " id="nav-tab" role="tablist" >
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">General</button>
+                    <button class="nav-link" id="nav-ticket-tab" data-bs-toggle="tab" data-bs-target="#nav-ticket" type="button" role="tab" aria-controls="nav-ticket" aria-selected="false">Ticket-realted</button>
+                    <button class="nav-link" id="nav-payment-tab" data-bs-toggle="tab" data-bs-target="#nav-payment" type="button" role="tab" aria-controls="nav-payment" aria-selected="false">Payment</button>
+                    <button class="nav-link" id="nav-cancel-tab" data-bs-toggle="tab" data-bs-target="#nav-cancel" type="button" role="tab" aria-controls="nav-cancel" aria-selected="false">Cancellation & Refund</button>
+                    <button class="nav-link" id="nav-insurance-tab" data-bs-toggle="tab" data-bs-target="#nav-insurance" type="button" role="tab" aria-controls="nav-insurance" aria-selected="false">Insurance</button>
+                    
+                    
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent"  >
+                  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="accordion" id="accordionhome">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header bg-light  ">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnehome" aria-expanded="true" aria-controls="collapseOne">
+                            <strong class="py-3 ">Can I track the location of my booked bus online?</strong>
+                          </button>
+                        </h2>
+                        <div id="collapseOnehome" class="accordion-collapse collapse bg-light  " data-bs-parent="#accordionhome">
+                          <div class="accordion-body">
+                            Yes, you can track your bus online by using our bus tracking app feature called “Track My Bus”. This feature allows passengers and their families to track the live bus tracking location. You may follow your bus on a map and use the information to plan your trip to the boarding point and to get off at the correct stop. Family and friends may also check the bus position to plan pick-ups and ensure your safety.          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header bg-light ">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwohome" aria-expanded="false" aria-controls="collapseTwo">
+                            <strong class="py-3">
+                              What are the advantages of purchasing a bus ticket with redBus?
+                              </strong> 
+                          </button>
+                        </h2>
+                        <div id="collapseTwohome" class="accordion-collapse collapse bg-light " data-bs-parent="#accordionhome">
+                          <div class="accordion-body">
+                           
+                            There are many advantages to purchasing online bus tickets with redBus. redBus is India’s most trusted bus ticket company, where you can book any type of private or Government owned buses. redBus allows you to find the different types of buses, choose the preferred bus seats, and your nearest boarding and dropping points. You can also filter the buses based on timings like morning, evening bus etc. 
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header bg-light ">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreehome" aria-expanded="false" aria-controls="collapseThree">
+                           <strong class="py-3">
+                            Why book bus tickets online on redBus?
+                            </strong>
+                          </button>
+                        </h2>
+                        <div id="collapseThreehome" class="accordion-collapse collapse bg-light " data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Booking bus tickets online on redBus is increasingly becoming the preferred choice for travelers due to its numerous advantages over traditional methods.With redBus, customers can book their bus tickets effortlessly from the comfort of their homes, avoiding the inconvenience of standing in long lines at bus stations or travel agencies. Online bus booking not only offers the luxury of comparing different bus schedules and operators but also presents various discount offers and exclusive deals, resulting in significant savings.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-ticket" role="tabpanel" aria-labelledby="nav-ticket-tab">
+                    <div class="accordion" id="accordionticket">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header bg-light  ">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <strong class="py-3 ">Can I track the location of my booked bus online?</strong>
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse bg-light  " data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Yes, you can track your bus online by using our bus tracking app feature called “Track My Bus”. This feature allows passengers and their families to track the live bus tracking location. You may follow your bus on a map and use the information to plan your trip to the boarding point and to get off at the correct stop. Family and friends may also check the bus position to plan pick-ups and ensure your safety.          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header bg-light ">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <strong class="py-3">
+                              What are the advantages of purchasing a bus ticket with redBus?
+                              </strong> 
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse bg-light " data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                           
+                            There are many advantages to purchasing online bus tickets with redBus. redBus is India’s most trusted bus ticket company, where you can book any type of private or Government owned buses. redBus allows you to find the different types of buses, choose the preferred bus seats, and your nearest boarding and dropping points. You can also filter the buses based on timings like morning, evening bus etc. 
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header bg-light ">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                           <strong class="py-3">
+                            Why book bus tickets online on redBus?
+                            </strong>
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse bg-light " data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Booking bus tickets online on redBus is increasingly becoming the preferred choice for travelers due to its numerous advantages over traditional methods.With redBus, customers can book their bus tickets effortlessly from the comfort of their homes, avoiding the inconvenience of standing in long lines at bus stations or travel agencies. Online bus booking not only offers the luxury of comparing different bus schedules and operators but also presents various discount offers and exclusive deals, resulting in significant savings.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-payment" role="tabpanel" aria-labelledby="nav-payment-tab">
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header bg-light  ">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <strong class="py-3 ">Can I track the location of my booked bus online?</strong>
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse bg-light  " data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Yes, you can track your bus online by using our bus tracking app feature called “Track My Bus”. This feature allows passengers and their families to track the live bus tracking location. You may follow your bus on a map and use the information to plan your trip to the boarding point and to get off at the correct stop. Family and friends may also check the bus position to plan pick-ups and ensure your safety.          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header bg-light ">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <strong class="py-3">
+                              What are the advantages of purchasing a bus ticket with redBus?
+                              </strong> 
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse bg-light " data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                           
+                            There are many advantages to purchasing online bus tickets with redBus. redBus is India’s most trusted bus ticket company, where you can book any type of private or Government owned buses. redBus allows you to find the different types of buses, choose the preferred bus seats, and your nearest boarding and dropping points. You can also filter the buses based on timings like morning, evening bus etc. 
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header bg-light ">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                           <strong class="py-3">
+                            Why book bus tickets online on redBus?
+                            </strong>
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse bg-light " data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Booking bus tickets online on redBus is increasingly becoming the preferred choice for travelers due to its numerous advantages over traditional methods.With redBus, customers can book their bus tickets effortlessly from the comfort of their homes, avoiding the inconvenience of standing in long lines at bus stations or travel agencies. Online bus booking not only offers the luxury of comparing different bus schedules and operators but also presents various discount offers and exclusive deals, resulting in significant savings.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-cancel" role="tabpanel" aria-labelledby="nav-cancel-tab">
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header bg-light  ">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <strong class="py-3 ">Can I track the location of my booked bus online?</strong>
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse bg-light  " data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Yes, you can track your bus online by using our bus tracking app feature called “Track My Bus”. This feature allows passengers and their families to track the live bus tracking location. You may follow your bus on a map and use the information to plan your trip to the boarding point and to get off at the correct stop. Family and friends may also check the bus position to plan pick-ups and ensure your safety.          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header bg-light ">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <strong class="py-3">
+                              What are the advantages of purchasing a bus ticket with redBus?
+                              </strong> 
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse bg-light " data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                           
+                            There are many advantages to purchasing online bus tickets with redBus. redBus is India’s most trusted bus ticket company, where you can book any type of private or Government owned buses. redBus allows you to find the different types of buses, choose the preferred bus seats, and your nearest boarding and dropping points. You can also filter the buses based on timings like morning, evening bus etc. 
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header bg-light ">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                           <strong class="py-3">
+                            Why book bus tickets online on redBus?
+                            </strong>
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse bg-light " data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Booking bus tickets online on redBus is increasingly becoming the preferred choice for travelers due to its numerous advantages over traditional methods.With redBus, customers can book their bus tickets effortlessly from the comfort of their homes, avoiding the inconvenience of standing in long lines at bus stations or travel agencies. Online bus booking not only offers the luxury of comparing different bus schedules and operators but also presents various discount offers and exclusive deals, resulting in significant savings.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-insurance" role="tabpanel" aria-labelledby="nav-insurance-tab">
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header bg-light  ">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <strong class="py-3 ">Can I track the location of my booked bus online?</strong>
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse bg-light  " data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Yes, you can track your bus online by using our bus tracking app feature called “Track My Bus”. This feature allows passengers and their families to track the live bus tracking location. You may follow your bus on a map and use the information to plan your trip to the boarding point and to get off at the correct stop. Family and friends may also check the bus position to plan pick-ups and ensure your safety.          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header bg-light ">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <strong class="py-3">
+                              What are the advantages of purchasing a bus ticket with redBus?
+                              </strong> 
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse bg-light " data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                           
+                            There are many advantages to purchasing online bus tickets with redBus. redBus is India’s most trusted bus ticket company, where you can book any type of private or Government owned buses. redBus allows you to find the different types of buses, choose the preferred bus seats, and your nearest boarding and dropping points. You can also filter the buses based on timings like morning, evening bus etc. 
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header bg-light ">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                           <strong class="py-3">
+                            Why book bus tickets online on redBus?
+                            </strong>
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse bg-light " data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Booking bus tickets online on redBus is increasingly becoming the preferred choice for travelers due to its numerous advantages over traditional methods.With redBus, customers can book their bus tickets effortlessly from the comfort of their homes, avoiding the inconvenience of standing in long lines at bus stations or travel agencies. Online bus booking not only offers the luxury of comparing different bus schedules and operators but also presents various discount offers and exclusive deals, resulting in significant savings.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Accordion Item #3
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
         </div>
       </div>
-    </div>
+
+
+
+    
   </body>
 </html>
