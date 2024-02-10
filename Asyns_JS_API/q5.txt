@@ -1,0 +1,18 @@
+some common Browser APIs available to JavaScript developers:
+
+DOM (Document Object Model) API:
+
+Purpose: Represents the structure of an HTML or XML document as a tree of objects. Developers can manipulate the document's structure, content, and styles dynamically.
+Usage: Access and modify HTML elements, attributes, and styles through methods like getElementById, createElement, appendChild, etc.
+XHR (XMLHttpRequest) API:
+
+Purpose: Enables making HTTP requests from the browser, allowing for data retrieval or sending data to a server asynchronously without a page reload.
+Usage: Create an instance of XMLHttpRequest, set the request parameters, define event handlers, and send the request using methods like open and send.
+Fetch API:
+
+Purpose: Provides a modern alternative to XHR for making HTTP requests. It returns promises and offers a more flexible and powerful interface for handling network requests.
+Usage: Use the fetch function to initiate requests and handle responses using promises. It supports a cleaner syntax and allows for more control over requests and responses.
+WebSockets API:
+
+Purpose: Enables bidirectional communication between the browser and the server over a single, long-lived connection. It is suitable for real-time applications.
+Usage: Create a WebSocket instance, handle events like onopen, onmessage, and onclose, and send/receive data using the send method.

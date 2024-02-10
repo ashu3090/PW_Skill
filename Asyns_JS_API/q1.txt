@@ -1,0 +1,19 @@
+The XMLHttpRequest (XHR) object is a JavaScript API provided by web browsers to make HTTP requests from the client-side. It is a core component of the AJAX (Asynchronous JavaScript and XML) technology, which allows web pages to asynchronously send and receive data from a web server without requiring a full page reload.
+
+XMLHttpRequest Object:
+The XMLHttpRequest object has the following key properties and methods:
+
+Properties:
+
+onreadystatechange: A callback function that gets called whenever the readyState property changes.
+readyState: Represents the state of the XMLHttpRequest. It can have values like 0 (uninitialized), 1 (opened), 2 (headers received), 3 (loading), and 4 (done).
+responseText, responseXML: Contains the server's response in the form of text or XML.
+Methods:
+
+open(method, url, async): Initializes a new request. The method parameter specifies the HTTP method (e.g., 'GET' or 'POST'), the url parameter specifies the URL to send the request to, and async indicates whether the request should be asynchronous.
+send(data): Sends the request to the server. The data parameter is used to send data with a POST request.
+Events:
+
+onload: Triggered when the request completes successfully.
+onerror: Triggered when an error occurs during the request.
+onreadystatechange: Triggered whenever the readyState property changes.

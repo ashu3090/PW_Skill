@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="showData">Get User Name</button>
+    <ul id="user_data"></ul>
+</body>
+<script>
+    let showData = document.getElementById("showData")
+    let user_data= document.getElementById('user_data')
+   
+    const getData =function(){
+    const requestUrl ="https://jsonplaceholder.typicode.com/users"
+    let xmlrequest = new XMLHttpRequest()
+    xmlrequest.open("Get",requestUrl)
+    xmlrequest.onreadystatechange =function(){
+        console.log(xmlrequest.readyState)
+        if(xmlrequest.readyState===4){
+           // console.log(this.responseText)
+            const data = JSON.parse(this.responseText)
+            
+            data.forEach(element => {
+             let name = element.name
+             
+             let name_ = document.createElement('li')
+             name_.appendChild(document.createTextNode(name))
+             document.getElementById('user_data').appendChild(name_)
+
+            
+           });
+           
+          
+
+           
+           
+           
+        }
+    }
+    
+    xmlrequest.send()
+    }
+
+    showData.addEventListener('click',getData)
+    
+</script>
+</html>

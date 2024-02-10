@@ -1,0 +1,36 @@
+The localStorage and sessionStorage APIs are part of the Web Storage API in web development, providing a way for web applications to store key-value pairs locally on the client's machine. Both APIs offer a simple and convenient mechanism for persisting data between page reloads, but they have different lifetimes and use cases.
+
+localStorage:
+Purpose:
+The localStorage API is designed for storing data with a longer lifespan. The data stored using localStorage persists even when the browser is closed and reopened, making it suitable for long-term storage.
+
+Usage:
+Setting an item in localStorage:
+
+javascript
+Copy code
+localStorage.setItem('username', 'JohnDoe');
+Getting an item from localStorage:
+
+javascript
+Copy code
+const username = localStorage.getItem('username');
+console.log(username); // Output: JohnDoe
+
+
+sessionStorage:
+Purpose:
+The sessionStorage API is designed for storing data with a shorter lifespan. The data stored using sessionStorage persists only for the duration of the page session. If the user closes the browser tab or window, the stored data is cleared.
+
+Usage:
+Setting an item in sessionStorage:
+
+javascript
+Copy code
+sessionStorage.setItem('userToken', 'abc123');
+Getting an item from sessionStorage:
+
+javascript
+Copy code
+const userToken = sessionStorage.getItem('userToken');
+console.log(userToken); // Output: abc123
